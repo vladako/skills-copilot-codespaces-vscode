@@ -1,11 +1,12 @@
-function skillsMember(): void {
-  const member = new Member();
-  member.skills = [
-    new Skill('JavaScript', 5),
-    new Skill('TypeScript', 4),
-    new Skill('Python', 3),
-  ];
-  member.skills.forEach((skill) => {
-    console.log(skill.name, skill.level);
-  });
+function skillsMember() {
+    var member = {
+        name: 'John Doe',
+        age: 30,
+        skills: ['HTML', 'CSS', 'JS'],
+        details: {
+            address: '123 Main St',
+            city: 'New York'
+        }
+    };
+    return member;
 }
